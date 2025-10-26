@@ -191,7 +191,7 @@ async function main() {
   console.log();
 
   console.log('🔗 Verify contracts on block explorer:');
-  console.log(`   https://somnia-testnet.socialscan.io/address/${factoryAddress}`);
+  console.log(`   https://shannon-explorer.somnia.network/address/${factoryAddress}`);
   console.log();
 }
 

@@ -207,7 +207,7 @@ SOMNIADEV/
 
 ## Smart Contract Addresses (Somnia Testnet)
 
-All contracts are deployed and verified on Somnia Testnet. You can view them on the [Somnia Block Explorer](https://somnia-testnet.socialscan.io).
+All contracts are deployed and verified on Somnia Testnet. You can view them on the [Somnia Block Explorer](https://shannon-explorer.somnia.network).
 
 ### Core Contracts
 
@@ -228,11 +228,11 @@ All contracts are deployed and verified on Somnia Testnet. You can view them on 
 
 ### Quick Links
 
-- **View Factory Contract**: https://somnia-testnet.socialscan.io/address/0xE1c29362B5e79697dc90db10D2C72A030b0CCa9f
-- **View Router Contract**: https://somnia-testnet.socialscan.io/address/0xB40C0e3Ddd3eF65B3CCe619cB48928E5a3E8fFA1
+- **View Factory Contract**: https://shannon-explorer.somnia.network/address/0xE1c29362B5e79697dc90db10D2C72A030b0CCa9f
+- **View Router Contract**: https://shannon-explorer.somnia.network/address/0xB40C0e3Ddd3eF65B3CCe619cB48928E5a3E8fFA1
 - **Network Info**: Somnia Testnet (Chain ID: 50312)
 - **RPC Endpoint**: https://dream-rpc.somnia.network
-- **Block Explorer**: https://somnia-testnet.socialscan.io
+- **Block Explorer**: https://shannon-explorer.somnia.network
 
 ### Getting Test Tokens
 

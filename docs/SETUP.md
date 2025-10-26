@@ -125,7 +125,7 @@ Network Name: Somnia Testnet
 RPC URL: https://dream-rpc.somnia.network
 Chain ID: 50312
 Currency Symbol: STT
-Block Explorer: https://somnia-testnet.socialscan.io
+Block Explorer: https://shannon-explorer.somnia.network
 ```
 
 ### 6. Get Testnet Tokens
@@ -323,7 +323,7 @@ VITE_BACKEND_URL=http://localhost:4000/api
 # Somnia Network
 VITE_SOMNIA_RPC=https://dream-rpc.somnia.network
 VITE_SOMNIA_CHAIN_ID=50312
-VITE_SOMNIA_EXPLORER=https://somnia-testnet.socialscan.io
+VITE_SOMNIA_EXPLORER=https://shannon-explorer.somnia.network
 
 # WalletConnect
 VITE_WALLETCONNECT_ID=your_walletconnect_project_id

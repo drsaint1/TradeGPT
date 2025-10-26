@@ -1,8 +1,8 @@
 import { ethers } from 'ethers';
 import { appConfig } from '../config';
 import type { PreparedTransaction, TradeSuggestion } from '../types';
-import routerArtifact from '../../../contracts/artifacts/contracts/ISomniaDexRouter.sol/ISomniaDexRouter.json' with { type: 'json' };
-import accountArtifact from '../../../contracts/artifacts/contracts/SomniaTradeAccount.sol/SomniaTradeAccount.json' with { type: 'json' };
+import routerArtifact from '../abis/ISomniaDexRouter.json' with { type: 'json' };
+import accountArtifact from '../abis/SomniaTradeAccount.json' with { type: 'json' };
 
 const KNOWN_ASSETS: Record<string, string> = {
   STT: process.env.SOMNIA_STT_ADDRESS ?? ethers.ZeroAddress,

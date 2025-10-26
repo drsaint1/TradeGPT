@@ -8,8 +8,8 @@ import { SocketHub } from "../websocket";
 import { TradeTransactionBuilder } from "../services/tradeTransactionBuilder";
 import { SmartAccountTransactionBuilder } from "../services/smartAccountTransactionBuilder";
 import { appConfig } from "../config";
-import factoryArtifact from "../../../contracts/artifacts/contracts/SomniaTradeFactory.sol/SomniaTradeFactory.json" with { type: "json" };
-import accountArtifact from "../../../contracts/artifacts/contracts/SomniaTradeAccount.sol/SomniaTradeAccount.json" with { type: "json" };
+import factoryArtifact from "../abis/SomniaTradeFactory.json" with { type: "json" };
+import accountArtifact from "../abis/SomniaTradeAccount.json" with { type: "json" };
 
 const chatSchema = z.object({
   userId: z.string().min(1),

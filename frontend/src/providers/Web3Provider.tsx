@@ -22,7 +22,7 @@ const somniaTestnet = {
   blockExplorers: {
     default: {
       name: "Somnia Explorer",
-      url: import.meta.env.VITE_SOMNIA_EXPLORER ?? "https://somnia-testnet.socialscan.io",
+      url: import.meta.env.VITE_SOMNIA_EXPLORER ?? "https://shannon-explorer.somnia.network",
     },
   },
   testnet: true,

@@ -48,3 +48,6 @@ export interface AiResponse {
   reply: ChatMessage;
   suggestion?: TradeSuggestion;
 }
+
+// Alias for compatibility
+export type Trade = StoredTrade;
