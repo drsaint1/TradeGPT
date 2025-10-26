@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useAccount, usePublicClient } from 'wagmi';
-import { getContract } from 'viem';
 
 const FACTORY_ADDRESS = import.meta.env.VITE_FACTORY_ADDRESS;
 
@@ -42,15 +41,13 @@ export function useSmartAccount() {
       try {
         setLoading(true);
 
-        const factory = getContract({
+        const accounts = (await publicClient!.readContract({
           address: FACTORY_ADDRESS as `0x${string}`,
           abi: FACTORY_ABI,
-          client: publicClient,
-        });
-
-        const accounts = await factory.read.getAccountsByOwner([address], {
+          functionName: 'getAccountsByOwner',
+          args: [address as `0x${string}`],
           blockTag: 'latest'
-        });
+        })) as readonly `0x${string}`[];
 
         console.log('[useSmartAccount] Factory:', FACTORY_ADDRESS);
         console.log('[useSmartAccount] Found accounts:', accounts);
@@ -80,15 +77,13 @@ export function useSmartAccount() {
     if (!address || !publicClient) return;
 
     try {
-      const factory = getContract({
+      const accounts = (await publicClient.readContract({
         address: FACTORY_ADDRESS as `0x${string}`,
         abi: FACTORY_ABI,
-        client: publicClient,
-      });
-
-      const accounts = await factory.read.getAccountsByOwner([address], {
+        functionName: 'getAccountsByOwner',
+        args: [address],
         blockTag: 'latest'
-      });
+      })) as readonly `0x${string}`[];
 
       console.log('[useSmartAccount.refetch] Found accounts:', accounts);
 

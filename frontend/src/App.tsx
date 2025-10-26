@@ -89,7 +89,7 @@ export default function App() {
         };
         setMessages((prev) => [...prev, assistantMessage]);
         if (response.trade) {
-          setTrades((prev) => upsertTrade(prev, response.trade));
+          setTrades((prev) => upsertTrade(prev, response.trade!));
           toast.success('Trade setup created! 🎯', {
             style: {
               background: '#111213',
@@ -262,7 +262,7 @@ export default function App() {
             <Box sx={{ flex: 1, p: 3, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <SmartAccountSetup
                 factoryAddress={factoryAddress}
-                factoryAbi={factoryAbi}
+                factoryAbi={factoryAbi as unknown as any[]}
                 onAccountCreated={refetchAccount}
               />
             </Box>
