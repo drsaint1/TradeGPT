@@ -40,13 +40,13 @@ export function useSmartAccount() {
     async function checkAccount() {
       try {
         setLoading(true);
+        if (!publicClient || !address) return;
 
-        const accounts = (await publicClient!.readContract({
+        const accounts = (await publicClient.readContract({
           address: FACTORY_ADDRESS as `0x${string}`,
           abi: FACTORY_ABI,
           functionName: 'getAccountsByOwner',
           args: [address as `0x${string}`],
-          blockTag: 'latest'
         })) as readonly `0x${string}`[];
 
         console.log('[useSmartAccount] Factory:', FACTORY_ADDRESS);
@@ -81,8 +81,7 @@ export function useSmartAccount() {
         address: FACTORY_ADDRESS as `0x${string}`,
         abi: FACTORY_ABI,
         functionName: 'getAccountsByOwner',
-        args: [address],
-        blockTag: 'latest'
+        args: [address as `0x${string}`],
       })) as readonly `0x${string}`[];
 
       console.log('[useSmartAccount.refetch] Found accounts:', accounts);
