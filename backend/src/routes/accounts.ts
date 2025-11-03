@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { z } from 'zod';
 import { ethers } from 'ethers';
-import { appConfig } from '../config';
+import { appConfig } from '../config.js';
 
 const FACTORY_ABI = [
   {

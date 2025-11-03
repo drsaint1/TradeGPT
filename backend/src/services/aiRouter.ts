@@ -1,9 +1,9 @@
 import { OpenAI } from "openai";
 import { GoogleGenerativeAI, type GenerativeModel } from "@google/generative-ai";
 import { v4 as uuidv4 } from "uuid";
-import { appConfig } from "../config";
-import { AiResponse, ChatMessage, TradeSuggestion } from "../types";
-import { MarketDataService } from "./marketDataService";
+import { appConfig } from "../config.js";
+import { AiResponse, ChatMessage, TradeSuggestion } from "../types.js";
+import { MarketDataService } from "./marketDataService.js";
 
 interface ConversationContext {
   userId: string;

@@ -1,6 +1,6 @@
 import { ethers } from 'ethers';
-import { appConfig } from '../config';
-import type { PreparedTransaction, TradeSuggestion } from '../types';
+import { appConfig } from '../config.js';
+import type { PreparedTransaction, TradeSuggestion } from '../types.js';
 import routerArtifact from '../abis/ISomniaDexRouter.json' with { type: 'json' };
 import accountArtifact from '../abis/SomniaTradeAccount.json' with { type: 'json' };
 

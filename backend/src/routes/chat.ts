@@ -1,13 +1,13 @@
 import { Router } from "express";
 import { z } from "zod";
 import { ethers } from "ethers";
-import { AiRouter } from "../services/aiRouter";
-import { ConversationStore } from "../store/conversationStore";
-import { TradeStore } from "../store/tradeStore";
-import { SocketHub } from "../websocket";
-import { TradeTransactionBuilder } from "../services/tradeTransactionBuilder";
-import { SmartAccountTransactionBuilder } from "../services/smartAccountTransactionBuilder";
-import { appConfig } from "../config";
+import { AiRouter } from "../services/aiRouter.js";
+import { ConversationStore } from "../store/conversationStore.js";
+import { TradeStore } from "../store/tradeStore.js";
+import { SocketHub } from "../websocket.js";
+import { TradeTransactionBuilder } from "../services/tradeTransactionBuilder.js";
+import { SmartAccountTransactionBuilder } from "../services/smartAccountTransactionBuilder.js";
+import { appConfig } from "../config.js";
 import factoryArtifact from "../abis/SomniaTradeFactory.json" with { type: "json" };
 import accountArtifact from "../abis/SomniaTradeAccount.json" with { type: "json" };
 

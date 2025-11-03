@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { z } from 'zod';
-import { TradeStore } from '../store/tradeStore';
-import { SocketHub } from '../websocket';
+import { TradeStore } from '../store/tradeStore.js';
+import { SocketHub } from '../websocket.js';
 
 const preparedTxSchema = z
   .object({

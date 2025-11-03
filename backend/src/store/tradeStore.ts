@@ -1,4 +1,4 @@
-import { StoredTrade, TradeSuggestion, TradeStatus } from "../types";
+import { StoredTrade, TradeSuggestion, TradeStatus } from "../types.js";
 
 export class TradeStore {
   private readonly tradesByUser = new Map<string, Map<string, StoredTrade>>();

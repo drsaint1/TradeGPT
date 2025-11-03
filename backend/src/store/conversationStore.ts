@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
-import { ChatMessage } from "../types";
+import { ChatMessage } from "../types.js";
 
 export class ConversationStore {
   private readonly messagesByUser = new Map<string, ChatMessage[]>();

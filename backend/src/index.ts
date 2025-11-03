@@ -1,17 +1,17 @@
 import cors from "cors";
 import express from "express";
 import http from "http";
-import { appConfig, securityConfig } from "./config";
-import { MarketDataService } from "./services/marketDataService";
-import { AiRouter } from "./services/aiRouter";
-import { TradeTransactionBuilder } from "./services/tradeTransactionBuilder";
-import { StopLossMonitor } from "./services/stopLossMonitor";
-import { TradeStore } from "./store/tradeStore";
-import { ConversationStore } from "./store/conversationStore";
-import { SocketHub } from "./websocket";
-import { buildChatRouter } from "./routes/chat";
-import { buildTradeRouter } from "./routes/trades";
-import { buildAccountRouter } from "./routes/accounts";
+import { appConfig, securityConfig } from "./config.js";
+import { MarketDataService } from "./services/marketDataService.js";
+import { AiRouter } from "./services/aiRouter.js";
+import { TradeTransactionBuilder } from "./services/tradeTransactionBuilder.js";
+import { StopLossMonitor } from "./services/stopLossMonitor.js";
+import { TradeStore } from "./store/tradeStore.js";
+import { ConversationStore } from "./store/conversationStore.js";
+import { SocketHub } from "./websocket.js";
+import { buildChatRouter } from "./routes/chat.js";
+import { buildTradeRouter } from "./routes/trades.js";
+import { buildAccountRouter } from "./routes/accounts.js";
 
 const app = express();
 

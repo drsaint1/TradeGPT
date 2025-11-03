@@ -1,8 +1,8 @@
 import { ethers } from 'ethers';
-import { TradeStore } from '../store/tradeStore';
-import { SocketHub } from '../websocket';
-import type { Trade } from '../types';
-import { appConfig } from '../config';
+import { TradeStore } from '../store/tradeStore.js';
+import { SocketHub } from '../websocket.js';
+import type { Trade } from '../types.js';
+import { appConfig } from '../config.js';
 
 interface PriceData {
   symbol: string;
